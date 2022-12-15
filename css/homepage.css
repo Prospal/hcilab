@@ -47,14 +47,16 @@ body{
   background-color: inherit;
   font-family: inherit;
   }
+
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: gold;
+  /* background-color: gold; */
   min-width: 160px;
   height: 100px;
   z-index: 99;
 }
+
 .dropdown-content a {
   float: none;
   color: black;
@@ -122,8 +124,12 @@ body{
 .produk{
   display: flex;
 }
+footer{
+  /* display: flex; */
+  justify-content: center;
+  background-color: gold;
+}
 
-/* footer */
 .footer{
     padding: 0;
     bottom: 0;
