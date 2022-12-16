@@ -125,6 +125,7 @@ body{
 .produk{
   display: flex;
 }
+
 footer{
   /* display: flex; */
   justify-content: center;
@@ -144,4 +145,23 @@ footer{
 
 .footer p{
   text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+
+  /* konten */
+  .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+
+  /* footer */
+
+  .footer{
+    display: flex;
+    flex-direction: column;
+  }
+
 }
