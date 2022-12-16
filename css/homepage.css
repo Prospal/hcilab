@@ -53,6 +53,7 @@ body{
   display: none;
   position: absolute;
   /* background-color: gold; */
+  background-color: rgb(255, 145, 0);
   min-width: 160px;
   height: 100px;
   z-index: 99;
@@ -165,4 +166,3 @@ footer{
   }
 
 }
-
