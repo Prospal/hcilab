@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="../js/login.js"></script>
+    <title>Login</title>
+</head>
+
+<div class="header">
+                
+    <div class="topnav">
+        <div class="headerkontensatu">
+            <img src="../images/logo.png" alt="">
+        </div>
+
+        <div class="headerkontendua">
+            <a href="#home" class="menusaatini">Membership</a>
+            <a href="../html/homepage.html">Home</a>
+            <div class="dropdown">
+                <!-- <button class="dropbtn">Menu 
+                </button>
+                <div class="dropdown-content">
+                    <a href="./homepage.html">Home</a>
+                    <a href="#">Yellow Gold</a>
+                    <a href="">White Gold</a>
+                    <a href="./promotion.html">Promotion</a>
+                    <a href="#">About Us</a>
+                </div>   -->
+            </div>
+        
+        </div>
+        <div class="headerkontenketiga">
+            <a href="#login">Login</a>
+        </div>
+    </div>
+</div> 
+
+<body>
+    <!-- login page -->
+    <div class="login">
+        <h1>Register Your Membership</h1>
+        <form id="login-form">
+            <label for="username">Name:</label><br>
+            <input type="text" id="username" name="username" pattern="[a-zA-Z0-9]+" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" pattern=".{8,}" required><br><br>
+            <label for="password">Confirm Password:</label><br>
+            <input type="password" id="password" name="password" pattern=".{8,}" required><br><br>
+            <label for="city">City:</label><br>
+            <select id="city" name="city">
+                <option value="Jakarta">Jakarta</option>
+                <option value="Bandung">Bandung</option>
+                <option value="Surabaya">Surabaya</option>
+                <option value="Medan">Medan</option>
+                <option value="Bali">Bali</option>
+            </select><br><br>
+            <label for="address">Address:</label><br>
+            <input type="text" id="address" name="address" required><br><br>
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to the terms and conditions</label><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
