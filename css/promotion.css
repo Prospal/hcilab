@@ -17,12 +17,18 @@ body{
     padding: 75px 20px;
   }
   
+  .headerkontensatu{
+   width: auto;
+  }
+
   .headerkontendua{
     display: flex;
+    width: auto;
   }
   
   .headerkontenketiga{
     padding: 75px 16px;
+    width: auto;
   }
   
   .topnav img{

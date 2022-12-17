@@ -25,8 +25,13 @@ body{
     display: flex;
 }
 
+
 .headerkontenketiga{
     padding: 75px 16px;
+}
+
+.headerkontenketiga a{
+    color: black;
 }
 
 .topnav img{
