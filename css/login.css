@@ -6,7 +6,7 @@ body{
 }
 
 .header{
-    background: rgb(255, 228, 89);
+    background: #FFC947;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -61,7 +61,7 @@ input[type="text"], input[type="password"] {
 }
 input[type="submit"] {
     width: 100%;
-    background-color: gold;
+    background-color: #FFC947;
     font-weight: bold;
     color: white;
     padding: 14px 20px;
@@ -95,7 +95,7 @@ select[name="city"]{
 /* footer */
 
 footer {
-    background-color: rgb(255, 228, 89);
+    background-color: #FFC947;
     color: #fff;
     padding: 20px;
     display: flex;
