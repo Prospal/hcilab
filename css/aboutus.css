@@ -5,9 +5,8 @@
   
   /* coba */
   .header{
-    background: rgb(79, 78, 78);
+    background: gold;
     width: 100%;
-    color: gold;
     display: flex;
     justify-content: space-between;
     padding-left: 2rem;
@@ -19,7 +18,8 @@
   }
   .header a{
     text-decoration: none;
-    color: gold;
+    color: white;
+    font-weight: bolder;
   }
   .logo{
     text-transform: uppercase;
