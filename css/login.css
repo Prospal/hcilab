@@ -95,7 +95,7 @@ select[name="city"]{
 /* footer */
 
 footer {
-    background-color: gold;
+    background-color: goldenrod;
     color: #fff;
     padding: 20px;
     display: flex;
