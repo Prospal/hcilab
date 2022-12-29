@@ -34,9 +34,10 @@
             <label for="email">Email:</label><br>
             <input type="email" id="email" name="email" required><br>
             <label for="password">Password:</label><br>
-            <input type="password" id="password" name="password" pattern=".{8,}" required><br><br>
-            <label for="password">Confirm Password:</label><br>
-            <input type="password" id="password" name="password" pattern=".{8,}" required><br><br>
+            <input type="password" id="password" name="password"><br>
+            <label for="confirm_password">Confirm Password:</label><br>
+            <input type="password" id="confirm_password" name="confirm_password" onkeyup='check();'><br><br>
+            <span id="message"></span> <br><br>
             <label for="city">City:</label><br>
             <select id="city" name="city">
                 <option value="Jakarta">Jakarta</option>
@@ -51,6 +52,9 @@
             <label for="terms">I agree to the terms and conditions</label><br><br>
             <input type="submit" value="Submit">
         </form>
+        <script>
+            document.getElementById('login-form').onsubmit = check;
+        </script>
     </div>
 </body>
 
