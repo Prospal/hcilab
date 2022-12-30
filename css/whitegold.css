@@ -1,4 +1,38 @@
-.arrival-heading strong{
+.header{
+    left: 0;
+    background: #FFC947;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    top: 0;
+    z-index: 99;
+    position: fixed;
+    
+  }
+  .header a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+  }
+  .logo{
+    text-transform: uppercase;
+    font-size: larger;
+  }
+
+  .nav{
+    display: flex;
+    gap: 2rem;
+    padding-right: 3rem;
+    text-transform: uppercase;
+    font-size: larger;
+  }
+
+.white-jewelry{
+    margin-top: 15px;
+}
+.white-jewelry strong{
     font-size: 1.2rem;
     letter-spacing: 1px;
     color: #1b1919;
@@ -8,21 +42,16 @@
     padding: 5px 30px;
     border: 1px solid #e0e0e0;
 }
-.arrival-heading{
+.white-jewelry{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.arrival-heading strong{
+.white-jewelry strong{
     color: #ffffff;
     background-color: #202020;
     font-weight: 500;
-}
-.arrival-heading p{
-    color: #808080;
-    margin: 10px;
-    font-size: 0.9rem;
 }
 .product-container{
     width:90%;
@@ -70,9 +99,7 @@
     font-size: 1.2rem;
     font-weight: 400;
 }
-.product-box:hover{
-    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
-}
+
 .add-cart{
     position: absolute;
     right: -20px;
@@ -103,3 +130,23 @@
     justify-content: center;
     align-items: center;
 }
+
+.konten{
+    position: absolute;
+    margin-top: 20px;
+    top: 50%;
+    left: 5px;
+    right: 5px;
+    background: gold;
+    transform: translateZ(200px)scaleY(0);
+    padding: 40px 25px;
+    transform-origin: top;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+  }
+  .konten h2{
+    text-align: center;
+  }
+  .box:hover .konten{
+    transform: translatez(200px) scaleY(1);
+  }
