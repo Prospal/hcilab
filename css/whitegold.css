@@ -1,3 +1,8 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
 .header{
     left: 0;
     background: #FFC947;
@@ -29,9 +34,14 @@
     font-size: larger;
   }
 
+
+/* white jewelry */
 .white-jewelry{
-    margin-top: 15px;
+    margin-top: 25px;
+    background-color: black;
+    margin-bottom: -25px;
 }
+
 .white-jewelry strong{
     font-size: 1.2rem;
     letter-spacing: 1px;
@@ -49,10 +59,41 @@
     flex-direction: column;
 }
 .white-jewelry strong{
-    color: #ffffff;
-    background-color: #202020;
+    color: black;
+    background-color: white;
     font-weight: 500;
 }
+
+/* yellow jewelry */
+
+.yellow-jewelry{
+    margin-top: 25px;
+    background-color: black;
+    margin-bottom: -25px;
+}
+
+.yellow-jewelry strong{
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    color: #1b1919;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 40px;
+    padding: 5px 30px;
+    border: 1px solid #e0e0e0;
+}
+.yellow-jewelry{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.yellow-jewelry strong{
+    color: black;
+    background-color: gold;
+    font-weight: 500;
+}
+
 .product-container{
     width:90%;
     display: flex;
@@ -62,6 +103,7 @@
     margin-top: 20px;
 }
 .product-box{
+    background-color: white;
     display: flex;
     flex-grow: 0.5;
     flex-direction: column;
@@ -88,8 +130,8 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    margin-top: -40px;
     padding: 10px 20px;
-    border-top: 1px solid #f3f3f3;
 }
 .p-name{
     color: #727272;
@@ -101,8 +143,9 @@
 }
 
 .add-cart{
+    text-align: center;
     position: absolute;
-    right: -20px;
+    right: -60px;
     top: 10px;
     width:50px;
     height: 50px;
@@ -133,7 +176,7 @@
 
 .konten{
     position: absolute;
-    margin-top: 20px;
+    margin-top: 70px;
     top: 50%;
     left: 5px;
     right: 5px;
@@ -149,4 +192,9 @@
   }
   .box:hover .konten{
     transform: translatez(200px) scaleY(1);
+  }
+
+  .box .gambar{
+    width: 200px;
+    height: 200px;
   }
