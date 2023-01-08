@@ -128,8 +128,8 @@ nav a:hover {
 
 
 /* footer */
-footer{
-  /* display: flex; */
+/* footer{
+  display: flex;
   justify-content: center;
   background-color: gold;
 }
@@ -147,7 +147,8 @@ footer{
 
 .footer p{
   text-align: center;
-}
+} */
+
 
 @media only screen and (max-width: 800px) {
 
@@ -158,12 +159,5 @@ footer{
     justify-content: center;
   }
   
-
-  /* footer */
-
-  .footer{
-    display: flex;
-    flex-direction: column;
-  }
 
 }
