@@ -14,7 +14,7 @@ nav {
   align-items: center;
   /* justify-content: space-between; */
   width: 100%;
-  background-color: rgb(79, 78, 78);
+  background-color: gold;
 }
 
 nav ul {
@@ -32,12 +32,12 @@ nav li {
 nav a {
   display: block;
   padding: 20px;
-  color: #fff;
+  color:black;
   text-decoration: none;
 }
 
 nav a:hover {
-  background-color: #444;
+  background-color: white;
 }
 
 .dropdown {
@@ -77,58 +77,179 @@ nav a:hover {
   height: auto;
   margin-bottom: 20px;
 }
+ body{
+  width: 100%;
+ }
 
-
-
-
-/* Konten */
-.container{
-  background-color: aqua;
+/* konten */
+.white-jewelry{
+  background-color:rgb(49, 49, 49);
+  margin-bottom: -25px;
 }
-.content{
+
+.white-jewelry strong{
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: #1b1919;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 40px;
+  padding: 5px 30px;
+  border: 1px solid #e0e0e0;
+}
+.white-jewelry{
   display: flex;
-  justify-content:space-between;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.white-jewelry strong{
+  color: black;
+  background-color: white;
+  font-weight: 500;
+}
+
+/* yellow jewelry */
+
+.yellow-jewelry{
+  margin-top: 25px;
+  background-color: rgb(48, 48, 48);
+  margin-bottom: -25px;
+}
+
+.yellow-jewelry strong{
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: #1b1919;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 40px;
+  padding: 5px 30px;
+  border: 1px solid #e0e0e0;
+}
+.yellow-jewelry{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.yellow-jewelry strong{
+  color: black;
+  background-color:white;
+  font-weight: 500;
+}
+
+.product-container{
+  width:90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.product-box{
+  background-color: white;
+  display: flex;
+  flex-grow: 0.5;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #f7f7f7;
+  border-radius: 10px;
+  margin: 20px;
+}
+.product-img{
+  width:200px;
+  height: 210px;
+  margin: 20px;
+  cursor: pointer;
+  position: relative;
+}
+.product-img img{
+  width:100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.product-details{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: -40px;
+  padding: 10px 20px;
+}
+.p-name{
+  color: #727272;
+}
+.p-price{
+  color: #333333;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.add-cart{
+  text-align: center;
+  position: absolute;
+  right: -60px;
+  top: 10px;
+  width:50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  background-color: #0b9d8a;
+  box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+  display: none;
+  animation: fade 0.3s;
+
+}
+.add-cart:hover{
+  background-color: #f76b6a;
+  transition: all ease 0.2s;
+}
+.product-box:hover .add-cart{
+  display: flex;
+}
+.new-arrival{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.konten{
+  position: absolute;
+  margin-top: 70px;
+  top: 50%;
+  left: 5px;
+  right: 5px;
+  background: gold;
+  transform: translateZ(200px)scaleY(0);
+  padding: 40px 25px;
+  transform-origin: top;
+  transition: 0.5s;
+  transform-style: preserve-3d;
+}
+.konten h2{
   text-align: center;
 }
-
-.kontenkiri{
-  padding-left: 8%;
+.box:hover .konten{
+  transform: translatez(200px) scaleY(1);
 }
 
-.kontenkiri img{
-  width: 50%;
-  z-index: -99;
-}
-.kontenkiri img:hover{
-  -ms-transform: scale(2);
-  -webkit-transform: scale(2); 
-  transform: scale(2); 
-}
-
-.kontenkanan{
-  padding-right: 8%;
-}
-
-.kontenkanan img{
-  width: 50%;
-  z-index: -99;
-}
-
-.kontenkanan img:hover{
-  -ms-transform: scale(2);
-  -webkit-transform: scale(2); 
-  transform: scale(2); 
-}
-
-.produk{
-  display: flex;
+.box .gambar{
+  width: 200px;
+  height: 200px;
 }
 
 
 
+/* jslider */
 .items{
-  padding-top: 1rem;
-  max-width: 1000px;
+  background-color: rgb(48, 48, 48);
+  padding-top: 2rem;
   height: auto;
   width: 100%;
   margin: 0 auto;
@@ -137,6 +258,7 @@ nav a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 1rem;
 }
 
 .images img{
@@ -158,6 +280,7 @@ nav a:hover {
 }
 
 .items a{
+  visibility: hidden;
   font-size: smaller;
   width: 50px;
   height: 50px;
@@ -184,6 +307,8 @@ nav a:hover {
 
 @media only screen and (max-width: 800px) {
 
+
+
   /* konten */
   .content{
     display: flex;
@@ -191,12 +316,8 @@ nav a:hover {
     justify-content: center;
   }
   
-  footer{
-    align-items: center;
-
-  }
   .items{
-    width:75%;
+    width:100%;
     padding-right: 1rem;
 
   }

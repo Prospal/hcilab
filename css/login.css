@@ -14,7 +14,7 @@ nav {
   align-items: center;
   /* justify-content: space-between; */
   width: 100%;
-  background-color: rgb(79, 78, 78);
+  background-color: gold;
 }
 
 nav ul {
@@ -32,12 +32,12 @@ nav li {
 nav a {
   display: block;
   padding: 20px;
-  color: #fff;
+  color: black;
   text-decoration: none;
 }
 
 nav a:hover {
-  background-color: #444;
+  background-color: white;
 }
 
 .dropdown {
