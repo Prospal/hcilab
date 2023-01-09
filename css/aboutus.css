@@ -160,15 +160,29 @@ footer {
     
 
     .about-us img{
-      width: 40%;
+      width: 200px;
     }
 
     .kontensatu img{
-      width: 40%;
+      width: 50%;
     }
 
+    .sectionsatu img{
+      width: 400px
+    };
 
+    nav img{
+      width: 300px;
+
+    }
+    nav{
+      width: 100%;
+    }
 
   }
 
-  
+  @media only screen and (max-width: 400px){
+    .sectionsatu img{
+      width: 200px
+    }
+  }

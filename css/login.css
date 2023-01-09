@@ -175,3 +175,26 @@ select[name="city"]{
     font-size: 1.5em;
     margin-left: 10px;
   } */
+
+  @media only screen and (max-width: 800px){
+
+    .login input{
+      width: fit-content;
+
+    }
+
+    .title{
+      font-size: 1.5em;
+      text-align: center;
+    }
+
+    .term{
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    #city{
+      width: fit-content;
+    }
+  }
+  
