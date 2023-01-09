@@ -5,33 +5,78 @@ body{
     background-color: #2B2B28;
 }
 
-.header{
-    background: #FFC947;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    top: 0;
-    z-index: 99;
-    position: fixed;
-    
-  }
-  .header a{
-    text-decoration: none;
-    color: white;
-    font-weight: bolder;
-  }
-  .logo{
-    text-transform: uppercase;
-    font-size: larger;
-  }
+.logo img{
+  width: 5.5rem;
+}
 
-  .nav{
-    padding-right: 3rem;
-    text-transform: uppercase;
-    font-size: larger;
-  }
+nav {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  width: 100%;
+  background-color: gold;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  display: block;
+  padding: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: white;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.main {
+  padding: 20px;
+}
+
+.main img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
 
 .login{
     padding-top: 3rem;
@@ -130,3 +175,26 @@ select[name="city"]{
     font-size: 1.5em;
     margin-left: 10px;
   } */
+
+  @media only screen and (max-width: 800px){
+
+    .login input{
+      width: fit-content;
+
+    }
+
+    .title{
+      font-size: 1.5em;
+      text-align: center;
+    }
+
+    .term{
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    #city{
+      width: fit-content;
+    }
+  }
+  
