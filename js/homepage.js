@@ -38,4 +38,4 @@ setInterval(function(){
         current.removeClass('active');
         $('.image:first-child').addClass('active');
     }
-}, 1000)
+}, 2500)
