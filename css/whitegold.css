@@ -239,3 +239,16 @@ body{
     width: 200px;
     height: 200px;
   }
+
+
+  @media only screen and (max-width: 800px){
+    *{
+      width: 100%;
+      height: 100%;
+    };
+
+    .yellow-jewelry strong{
+      font-size: 10rem;
+      padding: auto auto;
+    }
+  }

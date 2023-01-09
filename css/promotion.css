@@ -78,42 +78,79 @@ body{
   }
 
 
-footer {
-    bottom: 0;
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+  .items{
+    background-color: rgb(48, 48, 48);
+    padding-top: 2rem;
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-}
-
-.logofooter a img{
-    width: 3rem;
-}
-
-  footer a {
-    color: #fff;
+    padding-bottom: 1.5rem;
+  }
+  
+  .images img{
+    width: 880px;
+    height: 500px;
+  }
+  
+  .image{
+    display: none;
+  }
+  
+  .active{
+    display: block;
+  }
+  
+  .action{
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .items a{
+    visibility: hidden;
+    font-size: smaller;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0px 8px 13px 0px  rgba(0,0,0,0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-size: 20px;
     text-decoration: none;
   }
   
-  footer a:hover {
-    color: #ccc;
+  .items .left {
+    left: 20px;
+    background-color: gold;
   }
   
-  footer i {
-    font-size: 1.5em;
-    margin-left: 10px;
-  }
+  .items .right{
+    right: 20px;
+    background-color: gold;
+  } 
 
-  @media (max-width: 768px) {
-    footer {
-      flex-direction: column;
+
+
+  @media only screen and (max-width: 800px) {
+    /* konten */
+    
+    .items{
+      align-items: center;
+      width:100%;
+      padding-right: 1rem;
+  
     }
-    footer div {
-      margin-bottom: 20px;
+    .images img{
+      margin-left: 27%;
+      margin-right: 27%;;
+      width:50%;
+      height:auto;
     }
+
   }
-
-
